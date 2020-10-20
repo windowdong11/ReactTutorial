@@ -1,5 +1,40 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## 개발모드로 시작
+```npm start```
+
+## 개발모드로 시작 (https)
+```
+HTTPS=true npm start // Mac
+set HTTPS=true && npm start // Windows
+```  
+
+## 빌드
+
+```
+npm run build // 빌드
+```
+```
+npx serve -s build // build 폴더를 웹 서버 띄우기, serve : node.js에서 작동하는 웹서버 앱
+```
+
+빌드시에는 build폴더에 파일들이 생성되는데, 파일들 이름에 해시값이 포함되어있다.  
+이를 통해 각 파일들은 독립된 이름을 갖게되며, 이를 이용해 캐싱에 사용한다.  
+캐싱 : 어떤 저장소(캐시보다 먼 저장소, 서버 또는 메모리 등)에서 가져온 데이터를 캐시에 저장하여 같은 데이터를 다시 불러오는 속도를 빠르게함
+
+## 테스트
+
+```
+npm test
+```
+테스트 파일으로 인식하는 조건
++ __tests__폴더 하위의 모든 js파일
++ .test.js로 끝나는 파일
++ .spec.js로 끝나는 파일
+
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
