@@ -5,6 +5,7 @@ import LikeButton from './pages/LikeButton';
 import Container from './pages/Container';
 
 function App() {
+  console.log(process.env)
   return (
     <div className="App">
       <header className="App-header">
@@ -22,6 +23,7 @@ function App() {
         </a>
         <LikeButton></LikeButton>
         <Container></Container>
+      서버 : {process.env.REACT_APP_SERVER}
       </header>
     </div>
   );
