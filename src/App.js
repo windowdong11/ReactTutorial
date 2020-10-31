@@ -1,30 +1,8 @@
 import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
-
-
-function LikeButton() {
-  const [liked, setLiked] = useState(false)
-  const text = liked? "싫어요" : "좋아요"
-  const props = {
-    onClick: () => setLiked(!liked),
-    style: {
-      backgroundColor: liked ? "gray" : "red"
-    }
-  }
-  return <button {...props}>{text}</button>
-}
-
-function Container() {
-  const [count, setCount] = useState(0)
-  return(
-    <div>
-      <span>{count}</span>
-      <button onClick={() => setCount(count + 1)}>증가</button>
-      <button onClick={() => setCount(count - 1)}>감소</button>
-    </div>
-  )
-}
+import LikeButton from './pages/LikeButton';
+import Container from './pages/Container';
 
 function App() {
   return (
