@@ -12,11 +12,7 @@ function LikeButton() {
       backgroundColor: liked ? "gray" : "red"
     }
   }
-  return React.createElement(
-    'button',
-    props,
-    text
-  )
+  return <button {...props}>{text}</button>
 }
 
 function Container() {
