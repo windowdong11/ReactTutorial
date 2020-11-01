@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import LikeButton from './pages/LikeButton';
 import Container from './pages/Container';
+import History from './pages/History';
 
 function App() {
   console.log(process.env)
@@ -23,6 +24,7 @@ function App() {
         </a>
         <LikeButton></LikeButton>
         <Container></Container>
+        <History></History>
       서버 : {process.env.REACT_APP_SERVER}
       </header>
     </div>
