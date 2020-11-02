@@ -7,6 +7,7 @@ import History from './pages/History';
 import { BrowserRouter, Link, Route } from 'react-router-dom';
 import styled from 'styled-components';
 import ComputedPropNames from './pages/ComputedPropNames';
+import TodoList from './pages/TodoList';
 
 const BodyWrapper = styled.div`
   padding: 20;
@@ -27,11 +28,14 @@ function App() {
             <br/>
             <Link to='/history'>히스토리</Link>
             <br/>
+            <Link to ='/todolist'>할 일</Link>
+            <br/>
             <Link to='/computedpropnames'>계산된 속성명</Link>
             <Route path='/likeButton' component={LikeButton}></Route>
             <Route path='/container' component={Container}></Route>
             <Route path="/history" component={History}></Route>
             <Route path='/computedpropnames' component={ComputedPropNames}></Route>
+            <Route path='/todolist' component={TodoList}></Route>
           </BodyWrapper>
         </BrowserRouter>
       </header>
